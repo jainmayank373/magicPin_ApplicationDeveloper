@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+button{
+    font-size: 18px;
+}
+html, body{
+    padding: 0;
+    margin: 0;
+}
+#app_form{
+}
+#app
+{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-62%,-50%);
+    text-align: center;
+}
+ /*INPUT WRAPPER SELECTION*/
+#app_input {
+	border: none;
+	outline: none;
+	width: 301px;
+	height: 56px;
+	border-radius: 30px;
+	color: gray;
+	background: #F2F2F2;
+	box-shadow: 4px 3px 11px -6px black;
+	font-size: 21px;
+	text-align: center;
+}
+#app_input_wrapper{
+            padding-bottom: 20px;
+            width: 250px;
+            height: 25px;
+            background-color: white;
+            border-radius: 30px;
+            
+}
+  
+  /*SUBMIT BUTTON SELECTION*/
+#app_submit{
+
+    height:50px;
+    width: 240px;
+    background-color:#13BCB8;
+    color: white;
+    border: 0px;
+    position: relative;
+    overflow: hidden;
+}
+#app_ripple{
+     height:50px;
+    width: 240px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 2px 4px 4px -4px  black;
+    transform: translate(13%,50%);
+}
+
+/*RIPPLE SELECTION*/
+
+.ripple{
+    position: absolute;
+    width:140px;
+    height:60px;
+    background-color: black;
+    transform: scale(0);
+    animation: rippleEffect 0.7s;
+    transition: all 0.7s;
+    top:70%;
+    left: 25%;
+}
+
+
+.app_divider{
+    width: 1;
+    height: 30px;
+}
+
+/* RESULT ID SELECTION*/
+#app_result{
+    position: absolute;
+    top: 60%;
+
+    text-align: center;
+    width: 100%;
+}
+#app_result h3,h1{
+    color: grey;
+}
+#bg{
+    height: 100%;
+    
+    position: relative;
+}
+ 
+/*
+        RIPPLE EFFECT ANIMATION
+ */
+@keyframes rippleEffect{
+    to{
+        transform:scale(2.5);
+        opacity:0;
+    }
+}
+
